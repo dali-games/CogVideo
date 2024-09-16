@@ -14,3 +14,4 @@ openai>=1.42.0 # For prompt refiner
 moviepy==1.0.3 # For export video
 pillow==9.5.0
 fastapi
+uvicorn
