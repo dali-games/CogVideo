@@ -48,8 +48,8 @@ async def get_pipeline(
     # Set the scheduler and other configurations
     pipe.scheduler = CogVideoXDPMScheduler.from_config(pipe.scheduler.config, timestep_spacing="trailing")
     pipe.enable_sequential_cpu_offload()
-    pipe.vae.enable_slicing()
-    pipe.vae.enable_tiling()
+    # pipe.vae.enable_slicing()
+    # pipe.vae.enable_tiling()
 
     # Cache the pipeline
     pipelines[key] = pipe
